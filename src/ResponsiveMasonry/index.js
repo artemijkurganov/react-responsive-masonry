@@ -37,7 +37,7 @@ const useWindowWidth = () => {
     }
   }, [hasMounted, handleResize])
 
-  return width
+  return width || window.innerWidth;
 }
 
 const MasonryResponsive = ({
